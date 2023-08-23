@@ -1,0 +1,28 @@
+pratos principais:
+1- Pozole
+2- burrito
+3- chilli com carne
+4- enchiladas
+5- chilaquiles
+
+sobremesas:
+1- churros
+2- paleta mexicana
+3- tacos de oreo
+4- bolo tres leches
+5- chocoflan mexicano
+
+entradas:
+1- nachos com cheddar
+2- guacamole
+3- quesadilla de carne
+4- aguachile
+5- fajitas de frango
+
+bebidas:
+1- agua
+2- refrigerante
+3- cerveja
+4- tequila
+5- mojito
+
