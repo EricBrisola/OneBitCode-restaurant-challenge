@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Lobster", cursive, arial;
   font-size: 2rem;
+  overflow: none;
 }
 
 header {
@@ -49,22 +50,35 @@ main {
   grid-template-rows: 1fr;
   grid-column-gap: 50px;
   grid-row-gap: 0px;
+  padding: 1rem 0rem 1rem 0rem;
 }
 main #title-container {
-  justify-self: center;
-  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 750px;
+  width: 100%;
+  height: 15rem;
+  margin: 0rem 0rem 0rem 2rem;
+  background-color: #E53935;
 }
 main #title-container h1 {
-  font-size: 100%;
+  font-size: 5rem;
+  color: #f9f9f9;
 }
 main #taco-container {
   justify-self: center;
   align-self: center;
 }
+main #taco-container img {
+  width: 100%;
+  height: auto;
+}
 
 footer {
-  height: 10%;
-  font-size: 15px;
+  height: auto;
+  font-size: 14px;
   text-align: center;
   background-color: #FFC107;
 }
