@@ -45,49 +45,21 @@ header nav a:active {
 }
 
 main {
+  height: 100%;
+  width: auto;
   background-color: #4CAF50;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 50px;
+  grid-column-gap: 20px;
   grid-row-gap: 0px;
   padding: 1rem 0rem 1rem 0rem;
 }
-main #home-background {
-  padding-left: 2em;
-}
-main #home-background img {
-  max-width: 100%;
-  max-height: 15rem;
-  border-radius: 50%;
-}
-main #title-container {
+main .food-cards {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  max-width: 750px;
-  height: 15rem;
-  margin: 0rem 2rem 0rem 0rem;
-  padding: 2rem;
-  background-color: #E53935;
-}
-main #title-container h1 {
-  font-size: 5rem;
-  color: #f9f9f9;
-}
-main #taco-container {
-  justify-self: center;
-  align-self: center;
-}
-main #taco-container img {
-  width: 100%;
-  height: auto;
-}
-
-footer {
-  height: auto;
-  font-size: 14px;
-  text-align: center;
-  background-color: #FFC107;
-}/*# sourceMappingURL=home.css.map */
+  height: 300px;
+  width: 200px;
+}/*# sourceMappingURL=menu.css.map */
