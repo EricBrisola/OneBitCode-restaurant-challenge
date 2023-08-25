@@ -51,15 +51,21 @@ main {
   grid-template-rows: 1fr;
   grid-column-gap: 50px;
   grid-row-gap: 0px;
-  padding: 1rem 0rem 1rem 0rem;
+  padding: 1rem 0rem 1rem 1rem;
+  height: 88.8vh;
 }
 main #home-background {
   padding-left: 2em;
+  background-image: url(../../assets/home-background.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
 }
 main #home-background img {
   max-width: 100%;
   max-height: 15rem;
-  border-radius: 50%;
+  display: none;
 }
 main #title-container {
   display: flex;
@@ -70,7 +76,6 @@ main #title-container {
   height: 15rem;
   margin: 0rem 2rem 0rem 0rem;
   padding: 2rem;
-  background-color: #E53935;
 }
 main #title-container h1 {
   font-size: 5rem;
@@ -90,4 +95,6 @@ footer {
   font-size: 14px;
   text-align: center;
   background-color: #FFC107;
-}/*# sourceMappingURL=home.css.map */
+}
+
+/*# sourceMappingURL=home.css.map */
