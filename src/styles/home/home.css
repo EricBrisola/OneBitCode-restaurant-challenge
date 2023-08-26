@@ -56,16 +56,11 @@ main {
 }
 main #home-background {
   padding-left: 2em;
-  background-image: url(../../assets/home-background.jpg);
+  background-image: url(//assets/home-background.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100%;
-}
-main #home-background img {
-  max-width: 100%;
-  max-height: 15rem;
-  display: none;
+  height: 45%;
 }
 main #title-container {
   display: flex;
@@ -77,7 +72,7 @@ main #title-container {
   margin: 0rem 2rem 0rem 0rem;
   padding: 2rem;
 }
-main #title-container h1 {
+main #title-container h2 {
   font-size: 5rem;
   color: #f9f9f9;
 }

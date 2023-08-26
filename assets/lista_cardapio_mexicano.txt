@@ -1,12 +1,12 @@
 pratos principais:
-1- Pozole
-2- burrito
-3- chilli com carne
-4- enchiladas
-5- chilaquiles
+1- Pozole 1
+2- burrito 1
+3- chilli com carne 1
+4- enchiladas 1
+5- chilaquiles 1
 
 sobremesas:
-1- churros
+1- churros 
 2- paleta mexicana
 3- tacos de oreo
 4- bolo tres leches
@@ -16,13 +16,13 @@ entradas:
 1- nachos com cheddar
 2- guacamole
 3- quesadilla de carne
-4- aguachile
-5- fajitas de frango
+4- aguachile 1
+5- fajitas de frango 1
 
 bebidas:
 1- agua
 2- refrigerante
-3- cerveja
-4- tequila
-5- mojito
+3- cerveja 1
+4- tequila 1
+5- mojito 1
 
