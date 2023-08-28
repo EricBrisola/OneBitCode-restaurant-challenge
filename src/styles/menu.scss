@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+// Variables //
+
+    $bg-color: #4CAF50;
+    $secundary-color: #FFC107;
+    $font-color: #f9f9f9;
+    $default-font:'Lobster', cursive, arial;
+    $hover-color: #E53935;
+    //$hover-color: #65357D;//
+    $red-color: #E53935;
+    
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: $default-font;
+    font-size: 2rem;
+    overflow: none;
+}
+
+
+// Header style //
+header{
+    width: 100%;
+    height: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $secundary-color;
+
+    // Logo in Header //
+    img{
+        width: 1.5em;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        // Nav links //
+        a{
+            font-size: 1rem;
+            text-decoration: none;
+            color: $font-color;
+            padding-right: 1em;    
+        }
+
+        a:hover{
+            color: $hover-color;
+            scale: 1.1;
+            transition: 0.5s;
+        }
+        a:active{
+            color: $font-color;
+        }
+    }
+}
+main{
+    height: 100%;
+    width: auto;
+    background-color: $bg-color;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    justify-items: center;
+    grid-auto-flow: dense;
+
+    //padding: 0.9375em 1.5em;
+    padding: 1rem 0rem 1rem 0rem;
+    border: solid 1px red;
+
+
+.food-cards{
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+
+    img{
+        margin: auto;
+        max-width: 200px;
+        width: 100%;
+        border: solid 1px blue;
+        
+    }
+}
+}

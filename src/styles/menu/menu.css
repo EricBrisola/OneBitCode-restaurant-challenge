@@ -37,7 +37,6 @@ header nav a {
 }
 header nav a:hover {
   color: #E53935;
-  scale: 1.1;
   transition: 0.5s;
 }
 header nav a:active {
@@ -53,7 +52,6 @@ main {
   align-items: center;
   justify-content: space-around;
   padding: 1rem 0rem 1rem 0rem;
-  border: solid 1px red;
 }
 main .food-cards {
   display: flex;
@@ -62,14 +60,14 @@ main .food-cards {
   height: 400px;
   width: 300px;
   border-radius: 25px;
-  background: #8B4513;
+  background: #FF6961;
+  box-shadow: 7px 9px 35px 11px rgba(0, 0, 0, 0.237);
   margin-bottom: 15px;
 }
 main .food-cards img {
   margin: auto;
   width: 275px;
   height: 200px;
-  border: solid 1px blue;
   margin: 12.5px;
   border-radius: 15px;
 }
@@ -79,6 +77,46 @@ main .food-cards .food-names {
   color: #f9f9f9;
 }
 main .food-cards input {
-  width: 30%;
-  margin: auto;
+  width: 15%;
+  height: auto;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 0.9375rem;
+  color: #FFC107;
+}
+main .food-cards:hover {
+  scale: 1.025;
+  transition: 0.5s;
+}
+main .food-cards:hover h4 {
+  color: #FFC107;
+}
+main #input-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #input-info label {
+  font-size: 36px;
+}
+main #input-info input {
+  width: 10%;
+  height: 36px;
+  margin-left: 5px;
+  text-align: center;
+  color: #FFC107;
+  font-size: 24px;
+}
+main #input-info button {
+  font-size: 24px;
+  text-align: center;
+  background-color: #FFC107;
+  margin-left: 15px;
+  padding: 5px;
+}
+main #input-info button:hover {
+  background-color: #E53935;
+  scale: 1.025;
+  transition: 0.5s;
+  cursor: pointer;
 }/*# sourceMappingURL=menu.css.map */

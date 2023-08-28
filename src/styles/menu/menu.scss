@@ -9,6 +9,7 @@
     $hover-color: #E53935;
     //$hover-color: #65357D;//
     $red-color: #E53935;
+    $cards-background: #FF6961;
     
 *{
     padding: 0px;
@@ -54,7 +55,6 @@ header{
 
         a:hover{
             color: $hover-color;
-            scale: 1.1;
             transition: 0.5s;
         }
         a:active{
@@ -70,16 +70,8 @@ main{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    //grid-template-columns: repeat(4, 1fr);
-    //grid-template-rows: 1fr;
-    //grid-column-gap: 20px;
-    //grid-row-gap: 15px;
-    //justify-items: center;
-    //grid-auto-flow: dense;
-
-    //padding: 0.9375em 1.5em;
     padding: 1rem 0rem 1rem 0rem;
-    border: solid 1px red;
+    //border: solid 1px red;
 
 
 .food-cards{
@@ -90,14 +82,15 @@ main{
     height: 400px;
     width: 300px;
     border-radius: 25px;
-    background: #8B4513;
+    background: $cards-background;
+    box-shadow: 7px 9px 35px 11px rgba(0, 0, 0, 0.237);
     margin-bottom: 15px;
 
     img{
         margin: auto;
         width: 275px;
         height: 200px;
-        border: solid 1px blue;
+        //border: solid 1px blue;
         margin: 12.5px;
         border-radius: 15px;
     }
@@ -106,12 +99,59 @@ main{
         font-size: 0.5em;
         font-weight: lighter;
         color: #f9f9f9;
-        
     }
 
     input{
-        width: 30%;
-        margin: auto;
+        width: 15%;
+        height: auto;
+        text-align: center;
+        font-size: 24px;
+        margin-top: 0.9375rem;
+        color: $secundary-color;
+    }
+}
+
+.food-cards:hover{
+    scale: 1.025;
+    transition: 0.5s;
+
+    h4{
+        color: $secundary-color;
+    }
+    
+}
+
+#input-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    label{
+        font-size: 36px;
+    }
+
+    input{
+        width: 10%;
+        height: 36px;
+        margin-left: 5px;
+        text-align: center;
+        color: $secundary-color;
+        font-size: 24px;
+    }
+
+    button{
+        font-size: 24px;
+        text-align: center;
+        background-color: $secundary-color;
+        margin-left: 15px;
+        padding: 5px;
+    }
+
+    button:hover{
+        background-color: $red-color;
+        scale: 1.025;
+        transition: 0.5s;
+        cursor: pointer;
     }
 }
 }
