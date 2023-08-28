@@ -66,13 +66,16 @@ main{
     height: 100%;
     width: auto;
     background-color: $bg-color;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 15px;
-    justify-items: center;
-    grid-auto-flow: dense;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    //grid-template-columns: repeat(4, 1fr);
+    //grid-template-rows: 1fr;
+    //grid-column-gap: 20px;
+    //grid-row-gap: 15px;
+    //justify-items: center;
+    //grid-auto-flow: dense;
 
     //padding: 0.9375em 1.5em;
     padding: 1rem 0rem 1rem 0rem;
@@ -80,20 +83,23 @@ main{
 
 
 .food-cards{
-    border: solid 1px red;
+    //border: solid 1px red;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
     height: 400px;
     width: 300px;
+    border-radius: 25px;
+    background: #8B4513;
+    margin-bottom: 15px;
 
     img{
         margin: auto;
-        max-width: 200px;
-        width: 100%;
+        width: 275px;
+        height: 200px;
         border: solid 1px blue;
-        
+        margin: 12.5px;
+        border-radius: 15px;
     }
 
     .food-names{
@@ -101,6 +107,11 @@ main{
         font-weight: lighter;
         color: #f9f9f9;
         
+    }
+
+    input{
+        width: 30%;
+        margin: auto;
     }
 }
 }

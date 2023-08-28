@@ -9,7 +9,7 @@
     $default-font:'Lobster', cursive, arial;
     $hover-color: #E53935;
     $red-color: #E53935;
-    
+
 *{
     padding: 0px;
     margin: 0px;
@@ -17,7 +17,6 @@
     font-family: $default-font;
     font-size: 2rem;
     overflow: none;
-    
 }
 
 
@@ -56,7 +55,7 @@ header{
 
         a:hover{
             color: $hover-color;
-            scale: 1.1;
+            scale: 1;
             transition: 0.5s;
         }
         a:active{
@@ -67,51 +66,32 @@ header{
 
 main{
     background-color: $bg-color;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 0px;
-    padding: 1rem 0rem 1rem 1rem;
-    height: 88.8vh; 
+    background: linear-gradient(170deg, rgba(212,255,7,1) 0%, rgba(76,175,80,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: none;
+    padding: 1.5rem 0rem;
 
     #home-background{
-        padding-left: 2em;
-        background-image: url(//assets/home-background.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 25%;
-        width: auto;
-        
+        img{
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
     }
 
     #title-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        max-width: 750px;
-        //width: 100%;
-        height: 15rem;
-        margin: 0rem 2rem 0rem 0rem;
-        padding: 2rem;
-        
         h2{
             font-size: 5rem;
+            text-align: center;
             color: $font-color;
+            text-shadow: 4px 0px 11px rgba(255, 193, 7, 1);
         }
     }
 
-    #taco-container{
-        justify-self: center;
-        align-self: center;
-
-        img{
-            width: 100%;
-            height: auto;
-        }
-    }
 }
 
 footer{

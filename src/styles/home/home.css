@@ -37,7 +37,7 @@ header nav a {
 }
 header nav a:hover {
   color: #E53935;
-  scale: 1.1;
+  scale: 1;
   transition: 0.5s;
 }
 header nav a:active {
@@ -46,43 +46,25 @@ header nav a:active {
 
 main {
   background-color: #4CAF50;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 50px;
-  grid-row-gap: 0px;
-  padding: 1rem 0rem 1rem 1rem;
-  height: 88.8vh;
+  background: linear-gradient(170deg, rgb(212, 255, 7) 0%, rgb(76, 175, 80) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: none;
+  padding: 1.5rem 0rem;
 }
-main #home-background {
-  padding-left: 2em;
-  background-image: url(//assets/home-background.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 45%;
-}
-main #title-container {
+main #home-background img {
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  max-width: 750px;
-  height: 15rem;
-  margin: 0rem 2rem 0rem 0rem;
-  padding: 2rem;
+  padding: 15px;
 }
 main #title-container h2 {
   font-size: 5rem;
+  text-align: center;
   color: #f9f9f9;
-}
-main #taco-container {
-  justify-self: center;
-  align-self: center;
-}
-main #taco-container img {
-  width: 100%;
-  height: auto;
+  text-shadow: 4px 0px 11px rgb(255, 193, 7);
 }
 
 footer {
