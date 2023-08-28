@@ -1,0 +1,108 @@
+// Fonts //
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+// Variables //
+
+    $bg-color: #4CAF50; //Alternative color #65357D (purple)
+    $secundary-color: #FFC107;
+    $font-color: #f9f9f9;
+    $default-font:'Lobster', cursive, arial;
+    $hover-color: #E53935;
+    $cards-background: #FF6961;
+    $login-background: #F9F6EE;
+    
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: $default-font;
+    font-size: 2rem;
+    overflow: none;    
+}
+
+// Header style //
+header{
+  width: 100%;
+  height: 0.9em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $secundary-color;
+
+  // Logo in Header //
+  img{
+      width: 1.5em;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 1rem;
+  }
+
+  nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+
+      // Nav links //
+      a{
+          font-size: 1rem;
+          text-decoration: none;
+          color: $font-color;
+          padding-right: 1em;    
+      }
+
+      a:hover{
+          color: $hover-color;
+          //scale: 1.1;
+          transition: 0.5s;
+      }
+      a:active{
+          color: $font-color;
+      }
+  }
+}
+
+main{
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  min-height: 92vh;
+
+
+  #container{
+    background-color: $login-background;
+    border-radius: 1em;
+    align-self: center;
+    height: 9em;
+    width: 8em;    
+
+    #login-menu{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+        
+
+        #login-title{
+            font-size: 0.75em;
+        }
+
+
+        .login-labels{
+            font-size: 0.5em;
+        }
+
+        .login-inputs{
+            font: 0.5em;
+            height: 1em;
+            width: 7em;
+        }
+
+        #login-btn{
+            font-size: 0.75em;
+        }
+    }
+  }
+}
+

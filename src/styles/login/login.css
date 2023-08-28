@@ -37,7 +37,6 @@ header nav a {
 }
 header nav a:hover {
   color: #E53935;
-  scale: 1.1;
   transition: 0.5s;
 }
 header nav a:active {
@@ -45,31 +44,34 @@ header nav a:active {
 }
 
 main {
-  height: 100%;
-  width: auto;
   background-color: #4CAF50;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 15px;
-  justify-items: center;
-  grid-auto-flow: dense;
-  padding: 1rem 0rem 1rem 0rem;
-  border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  min-height: 92vh;
 }
-main .food-cards {
-  border: solid 1px red;
+main #container {
+  background-color: #F9F6EE;
+  border-radius: 1em;
+  align-self: center;
+  height: 9em;
+  width: 8em;
+}
+main #container #login-menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
-  width: 300px;
+  padding: 0.5em;
 }
-main .food-cards img {
-  margin: auto;
-  max-width: 200px;
-  width: 100%;
-  border: solid 1px blue;
-}/*# sourceMappingURL=menu.css.map */
+main #container #login-menu #login-title {
+  font-size: 0.75em;
+}
+main #container #login-menu .login-labels {
+  font-size: 0.5em;
+}
+main #container #login-menu .login-inputs {
+  font: 0.5em;
+  height: 1em;
+  width: 7em;
+}
+main #container #login-menu #login-btn {
+  font-size: 0.75em;
+}/*# sourceMappingURL=login.css.map */

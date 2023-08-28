@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mexican Food</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/login/login.css">
 </head>
 <body>
-    
+    <header>
+        <span id="header-img-span"><img src="../assets/mexican-flag.png" alt="mexican-flag"></span>
+        <span id="header-nav-span">
+
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="menu.html">Menu</a>
+        </span>
+      </nav>
+  </header>
+
+  <main>
+    <section id="container">
+        <div id="login-menu">
+            <h3 id="login-title">Login</h3>
+            <label for="user" class="login-labels">User</label>
+            <input type="email" name="email" id="email" class="login-inputs">
+
+            <label for="password" class="login-labels">Password</label>
+            <input type="password" name="password" id="password" class="login-inputs">
+
+            <input type="button" value="Login" id="login-btn">
+        </div>
+    </section>
+  </main>
 </body>
 </html>
