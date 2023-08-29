@@ -50,28 +50,52 @@ main {
   min-height: 92vh;
 }
 main #container {
-  background-color: #F9F6EE;
-  border-radius: 1em;
+  background-color: #FAF9F6;
+  border-radius: 0.8em;
   align-self: center;
-  height: 9em;
-  width: 8em;
+  height: 7em;
+  width: 7em;
 }
 main #container #login-menu {
   display: flex;
+  height: 100%;
   flex-direction: column;
-  padding: 0.5em;
+  align-items: center;
+  padding: 0.6em;
+  gap: 0.2em;
+}
+main #container #login-menu ::-webkit-input-placeholder {
+  color: #838383;
+  font-weight: 100;
+  opacity: 0.15;
 }
 main #container #login-menu #login-title {
+  color: #4CAF50;
   font-size: 0.75em;
-}
-main #container #login-menu .login-labels {
-  font-size: 0.5em;
+  align-self: center;
+  font-weight: 100;
 }
 main #container #login-menu .login-inputs {
-  font: 0.5em;
-  height: 1em;
-  width: 7em;
+  background-color: #f2f3f5;
+  padding-left: 0.2em;
+  font-size: 0.5em;
+  height: 2em;
+  width: 9em;
+  border-radius: 0.4em;
+  border: none;
 }
 main #container #login-menu #login-btn {
-  font-size: 0.75em;
+  height: 2em;
+  width: 9em;
+  font-size: 0.5em;
+  background-color: #4CAF50;
+  color: #FAF9F6;
+  padding: 0.12em;
+  border-radius: 0.4em;
+  border: none;
+  font-weight: 100;
+}
+main #container #login-menu #login-btn:hover {
+  scale: 1.025;
+  transition: 0.3s;
 }/*# sourceMappingURL=login.css.map */
