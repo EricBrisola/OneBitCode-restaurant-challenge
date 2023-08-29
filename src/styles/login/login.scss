@@ -9,7 +9,7 @@
     $default-font:'Lobster', cursive, arial;
     $hover-color: #E53935;
     $cards-background: #FF6961;
-    $login-background: #F9F6EE;
+    $login-background: #FAF9F6; //off white
     
 *{
     padding: 0px;
@@ -73,34 +73,59 @@ main{
 
   #container{
     background-color: $login-background;
-    border-radius: 1em;
+    border-radius: 0.8em;
     align-self: center;
-    height: 9em;
-    width: 8em;    
+    height: 7em;
+    width: 7em;  
+     
 
     #login-menu{
         display: flex;
+        height: 100%;
         flex-direction: column;
-        padding: 0.5em;
+        align-items: center;
+        padding: 0.6em;
+        gap: 0.2em;
+
+        ::-webkit-input-placeholder{
+            color: #838383;
+            font-weight: 100;
+            opacity: 0.15;
+        } 
         
-
         #login-title{
+            color: $bg-color;
             font-size: 0.75em;
+            align-self: center;
+            font-weight: 100;
+            
         }
 
-
-        .login-labels{
+        .login-inputs{ 
+            background-color: #f2f3f5;
+            padding-left: 0.2em;
             font-size: 0.5em;
-        }
-
-        .login-inputs{
-            font: 0.5em;
-            height: 1em;
-            width: 7em;
+            height: 2em;
+            width: 9em;
+            border-radius: 0.4em;
+            border: none;
         }
 
         #login-btn{
-            font-size: 0.75em;
+            height: 2em;
+            width: 9em;
+            font-size: 0.5em;
+            background-color: $bg-color;
+            color: $login-background;
+            padding: 0.12em;
+            border-radius: 0.4em;
+            border: none;
+            font-weight: 100;
+        }
+
+        #login-btn:hover{
+            scale: 1.025;
+            transition: 0.3s;
         }
     }
   }

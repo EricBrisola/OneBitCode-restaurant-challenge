@@ -66,8 +66,8 @@ main .food-cards {
 }
 main .food-cards img {
   margin: auto;
-  width: 275px;
-  height: 200px;
+  width: 270px;
+  height: 240px;
   margin: 12.5px;
   border-radius: 15px;
 }
@@ -83,6 +83,7 @@ main .food-cards input {
   font-size: 24px;
   margin-top: 0.9375rem;
   color: #FFC107;
+  border-radius: 0.4em;
 }
 main .food-cards:hover {
   scale: 1.015;
@@ -106,6 +107,7 @@ main #input-info input {
   text-align: center;
   color: #FFC107;
   font-size: 24px;
+  border-radius: 0.4em;
 }
 main #input-info button {
   font-size: 24px;
@@ -113,6 +115,7 @@ main #input-info button {
   background-color: #FFC107;
   margin-left: 15px;
   padding: 5px;
+  border-radius: 0.4em;
 }
 main #input-info button:hover {
   background-color: #E53935;
