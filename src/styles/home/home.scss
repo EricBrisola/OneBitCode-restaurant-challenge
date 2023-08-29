@@ -72,7 +72,7 @@ main{
     align-items: center;
     overflow: none;
     padding: 1.5rem 0rem;
-
+    height: 100%;
     #home-background{
         img{
             height: 500px;
@@ -99,4 +99,5 @@ footer{
     font-size: 14px;
     text-align: center;
     background-color: $secundary-color;
+    height: 100%;
 }

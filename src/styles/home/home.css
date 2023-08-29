@@ -52,6 +52,7 @@ main {
   align-items: center;
   overflow: none;
   padding: 1.5rem 0rem;
+  height: 100%;
 }
 main #home-background img {
   height: 500px;
@@ -72,4 +73,5 @@ footer {
   font-size: 14px;
   text-align: center;
   background-color: #FFC107;
+  height: 100%;
 }/*# sourceMappingURL=home.css.map */
