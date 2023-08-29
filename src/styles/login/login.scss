@@ -1,21 +1,23 @@
 // Fonts //
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 // Variables //
 
-    $bg-color: #4CAF50; //Alternative color #65357D (purple)
+    $bg-color: #58cd5c; //Alternative color #65357D or 55c759 (purple)
     $secundary-color: #FFC107;
     $font-color: #f9f9f9;
     $default-font:'Lobster', cursive, arial;
+    $secondary-font:'Montserrat', sans-serif;
     $hover-color: #E53935;
     $cards-background: #FF6961;
     $login-background: #FAF9F6; //off white
+    $input-background: #f2f3f5;
+    $input-placeholder: #838383;
     
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: $default-font;
     font-size: 2rem;
     overflow: none;    
 }
@@ -28,6 +30,7 @@ header{
   align-items: center;
   justify-content: space-between;
   background-color: $secundary-color;
+  font-family: $default-font;
 
   // Logo in Header //
   img{
@@ -69,7 +72,7 @@ main{
   display: flex;
   justify-content: center;
   min-height: 92vh;
-
+  font-family: $secondary-font;
 
   #container{
     background-color: $login-background;
@@ -78,37 +81,48 @@ main{
     height: 7em;
     width: 7em;  
      
-
     #login-menu{
         display: flex;
         height: 100%;
         flex-direction: column;
         align-items: center;
-        padding: 0.6em;
+        padding: 0.4em;
         gap: 0.2em;
 
         ::-webkit-input-placeholder{
-            color: #838383;
+            color: $input-placeholder;
             font-weight: 100;
             opacity: 0.15;
         } 
         
         #login-title{
             color: $bg-color;
-            font-size: 0.75em;
+            font-size: 0.85em;
             align-self: center;
             font-weight: 100;
-            
+            margin-bottom: 0.2em;
+        }
+
+        #user-icon{
+            color: $bg-color;
+            font-size: 0.85em;
         }
 
         .login-inputs{ 
-            background-color: #f2f3f5;
+            background-color: $input-background;
+            color: $bg-color;
+            font-family: $secondary-font;
             padding-left: 0.2em;
             font-size: 0.5em;
             height: 2em;
             width: 9em;
             border-radius: 0.4em;
-            border: none;
+            border: 0.02em solid transparent;
+        }
+
+        .login-inputs:focus{
+            border-color: $bg-color;
+            outline: none;
         }
 
         #login-btn{
@@ -117,10 +131,12 @@ main{
             font-size: 0.5em;
             background-color: $bg-color;
             color: $login-background;
+            font-family: $secondary-font;
             padding: 0.12em;
             border-radius: 0.4em;
             border: none;
             font-weight: 100;
+            cursor: pointer;
         }
 
         #login-btn:hover{

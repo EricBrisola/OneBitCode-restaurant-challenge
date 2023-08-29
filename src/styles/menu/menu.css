@@ -63,6 +63,7 @@ main .food-cards {
   background: #FF6961;
   box-shadow: 7px 9px 35px 11px rgba(0, 0, 0, 0.237);
   margin-bottom: 15px;
+  cursor: pointer;
 }
 main .food-cards img {
   margin: auto;
@@ -101,7 +102,7 @@ main #input-info label {
   font-size: 36px;
 }
 main #input-info input {
-  width: 10%;
+  width: 13%;
   height: 36px;
   margin-left: 5px;
   text-align: center;

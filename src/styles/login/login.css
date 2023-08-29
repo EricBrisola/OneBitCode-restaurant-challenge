@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Lobster", cursive, arial;
   font-size: 2rem;
   overflow: none;
 }
@@ -15,6 +15,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: #FFC107;
+  font-family: "Lobster", cursive, arial;
 }
 header img {
   width: 1.5em;
@@ -44,10 +45,11 @@ header nav a:active {
 }
 
 main {
-  background-color: #4CAF50;
+  background-color: #58cd5c;
   display: flex;
   justify-content: center;
   min-height: 92vh;
+  font-family: "Montserrat", sans-serif;
 }
 main #container {
   background-color: #FAF9F6;
@@ -61,7 +63,7 @@ main #container #login-menu {
   height: 100%;
   flex-direction: column;
   align-items: center;
-  padding: 0.6em;
+  padding: 0.4em;
   gap: 0.2em;
 }
 main #container #login-menu ::-webkit-input-placeholder {
@@ -70,30 +72,43 @@ main #container #login-menu ::-webkit-input-placeholder {
   opacity: 0.15;
 }
 main #container #login-menu #login-title {
-  color: #4CAF50;
-  font-size: 0.75em;
+  color: #58cd5c;
+  font-size: 0.85em;
   align-self: center;
   font-weight: 100;
+  margin-bottom: 0.2em;
+}
+main #container #login-menu #user-icon {
+  color: #58cd5c;
+  font-size: 0.85em;
 }
 main #container #login-menu .login-inputs {
   background-color: #f2f3f5;
+  color: #58cd5c;
+  font-family: "Montserrat", sans-serif;
   padding-left: 0.2em;
   font-size: 0.5em;
   height: 2em;
   width: 9em;
   border-radius: 0.4em;
-  border: none;
+  border: 0.02em solid transparent;
+}
+main #container #login-menu .login-inputs:focus {
+  border-color: #58cd5c;
+  outline: none;
 }
 main #container #login-menu #login-btn {
   height: 2em;
   width: 9em;
   font-size: 0.5em;
-  background-color: #4CAF50;
+  background-color: #58cd5c;
   color: #FAF9F6;
+  font-family: "Montserrat", sans-serif;
   padding: 0.12em;
   border-radius: 0.4em;
   border: none;
   font-weight: 100;
+  cursor: pointer;
 }
 main #container #login-menu #login-btn:hover {
   scale: 1.025;

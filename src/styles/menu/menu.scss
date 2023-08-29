@@ -85,6 +85,7 @@ main{
     background: $cards-background;
     box-shadow: 7px 9px 35px 11px rgba(0, 0, 0, 0.237);
     margin-bottom: 15px;
+    cursor: pointer;
 
     img{
         margin: auto;
@@ -132,7 +133,7 @@ main{
     }
 
     input{
-        width: 10%;
+        width: 13%;
         height: 36px;
         margin-left: 5px;
         text-align: center;
