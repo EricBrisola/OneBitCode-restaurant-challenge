@@ -101,3 +101,29 @@ footer{
     background-color: $secundary-color;
     height: 100%;
 }
+
+// Mobile break point //
+$mobile-breakpoint: 768px;
+
+@media (max-width: $mobile-breakpoint){
+    main{
+        flex-direction: column;
+        height: 100vh;
+        padding-top: 10px;
+
+        #home-background{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+
+        #title-container{
+            h2{
+                font-size: 3rem;
+            }
+
+        }
+    }
+}

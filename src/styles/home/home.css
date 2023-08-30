@@ -74,4 +74,19 @@ footer {
   text-align: center;
   background-color: #FFC107;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 10px;
+  }
+  main #home-background img {
+    width: 100%;
+    height: auto;
+  }
+  main #title-container h2 {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=home.css.map */
