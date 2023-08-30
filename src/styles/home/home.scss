@@ -104,11 +104,12 @@ footer{
 
 // Mobile break point //
 $mobile-breakpoint: 768px;
+$tablet-breakpoint: 1065px;
 
 @media (max-width: $mobile-breakpoint){
     main{
         flex-direction: column;
-        height: 100vh;
+        height: 100%;
         padding-top: 10px;
 
         #home-background{
