@@ -24,6 +24,7 @@ orderBtn.addEventListener('click', function (){
                 const order = {item: item, quantity: quantity, table: tableNumber}
                 //console.log(order)
                 orderList.push(order)
+                localStorage.setItem("orders", JSON.stringify(orderList))
             }
         })
     })
