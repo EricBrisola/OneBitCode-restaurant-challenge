@@ -6,6 +6,7 @@ const login = () =>
   const userID = document.querySelector('#admin').value
   const userPassword = document.querySelector('#password').value
   const kitchenPage = 'kitchen.html'
+  const loginInputs = document.querySelectorAll('.login-inputs')
 
   console.log({id: userID, passwrod:userPassword})
   if(userID === 'admin' && userPassword === 'admin')
@@ -15,7 +16,9 @@ const login = () =>
   }
   else
   {
-    console.log('no admin')
+    //changing inputs colors if they're incorrect
+    loginInputs.forEach((el) => el.classList.toggle('login-inputs-incorrect'))
+    setTimeout(() => alert('incorrect user or password'), 500)
     resetInputs()
   }
 }

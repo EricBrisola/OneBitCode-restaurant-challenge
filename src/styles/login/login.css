@@ -114,4 +114,19 @@ main #container #login-menu #login-btn {
 main #container #login-menu #login-btn:hover {
   scale: 1.025;
   transition: 0.3s;
+}
+main #container #login-menu .login-inputs-incorrect {
+  background-color: #f2f3f5;
+  color: #58cd5c;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 0.2em;
+  font-size: 0.5em;
+  height: 2em;
+  width: 9em;
+  border-radius: 0.4em;
+  border: 0.02em solid #FF6961;
+}
+main #container #login-menu .login-inputs-incorrect:focus {
+  border-color: #FF6961;
+  outline: none;
 }/*# sourceMappingURL=login.css.map */

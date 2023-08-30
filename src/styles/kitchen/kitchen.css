@@ -54,7 +54,11 @@ main {
 main #orders {
   display: flex;
   flex-wrap: wrap;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  justify-content: center;
   background-color: #FF6961;
+  color: #f9f9f9;
   width: 13em;
   height: 10.27em;
 }/*# sourceMappingURL=kitchen.css.map */

@@ -144,6 +144,26 @@ main{
             scale: 1.025;
             transition: 0.3s;
         }
+
+        //incorrect login styles
+        .login-inputs-incorrect{
+            background-color: $input-background;
+            color: $bg-color;
+            font-family: $secondary-font;
+            padding-left: 0.2em;
+            font-size: 0.5em;
+            height: 2em;
+            width: 9em;
+            border-radius: 0.4em; 
+            border: 0.02em solid $cards-background;
+        }
+
+        .login-inputs-incorrect:focus{
+            border-color: $cards-background;
+            outline: none;
+        }
+        
+        
     }
   }
 }
