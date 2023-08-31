@@ -46,7 +46,7 @@ header nav a:active {
 main {
   height: 100%;
   width: auto;
-  background-color: #4CAF50;
+  background-color: #58cd5c;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -94,6 +94,7 @@ main .food-cards:hover h4 {
   color: #FFC107;
 }
 main #input-info {
+  color: #f9f9f9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +111,13 @@ main #input-info input {
   font-size: 24px;
   border-radius: 0.4em;
 }
-main #input-info button {
+main #input-info #order-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 4em;
+  color: #f9f9f9;
   font-size: 24px;
   text-align: center;
   background-color: #FFC107;
@@ -118,8 +125,8 @@ main #input-info button {
   padding: 5px;
   border-radius: 0.4em;
 }
-main #input-info button:hover {
-  background-color: #E53935;
+main #input-info #order-btn:hover {
+  background-color: #FF6961;
   scale: 1.025;
   transition: 0.5s;
   cursor: pointer;

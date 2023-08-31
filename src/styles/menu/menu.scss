@@ -2,7 +2,7 @@
 
 // Variables //
 
-    $bg-color: #4CAF50;
+    $bg-color: #58cd5c;
     $secundary-color: #FFC107;
     $font-color: #f9f9f9;
     $default-font:'Lobster', cursive, arial;
@@ -75,7 +75,6 @@ main{
 
 
 .food-cards{
-    //border: solid 1px red;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -83,6 +82,7 @@ main{
     width: 300px;
     border-radius: 25px;
     background: $cards-background;
+    //filter: drop-shadow(2px 4px 6px #434343);
     box-shadow: 7px 9px 35px 11px rgba(0, 0, 0, 0.237);
     margin: 15px;
     cursor: pointer;
@@ -124,6 +124,7 @@ main{
 }
 
 #input-info{
+    color: $font-color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,7 +143,13 @@ main{
         border-radius: 0.4em;
     }
 
-    button{
+    #order-btn{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        height: 36px;
+        width: 4em;
+        color: $font-color;
         font-size: 24px;
         text-align: center;
         background-color: $secundary-color;
@@ -151,8 +158,8 @@ main{
         border-radius: 0.4em;
     }
 
-    button:hover{
-        background-color: $red-color;
+    #order-btn:hover{
+        background-color: $cards-background;
         scale: 1.025;
         transition: 0.5s;
         cursor: pointer;

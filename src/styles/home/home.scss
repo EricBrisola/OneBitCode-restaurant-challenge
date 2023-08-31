@@ -17,6 +17,7 @@
     font-family: $default-font;
     font-size: 2rem;
     overflow: none;
+
 }
 
 
@@ -72,10 +73,10 @@ main{
     align-items: center;
     overflow: none;
     padding: 1.5rem 0rem;
-    height: 100%;
+    height: auto;
     #home-background{
         img{
-            height: 500px;
+            height: 526px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -95,11 +96,13 @@ main{
 }
 
 footer{
-    height: auto;
-    font-size: 14px;
-    text-align: center;
-    background-color: $secundary-color;
-    height: 100%;
+    h1{
+        height: 5vh;
+        padding: 0.3em;
+        font-size: 0.3em;
+        text-align: center;
+        background-color: $secundary-color;
+    }
 }
 
 // Mobile break point //
