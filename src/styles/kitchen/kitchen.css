@@ -53,12 +53,19 @@ main {
 }
 main #orders {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  padding-right: 1em;
   padding-top: 0.5em;
-  justify-content: center;
+  align-items: center;
   background-color: #FF6961;
   color: #f9f9f9;
   width: 13em;
   height: 10.27em;
+}
+main #orders #orders-title {
+  font-size: 0.8em;
+  padding-bottom: 0.5em;
+}
+main #orders .order-items {
+  font-size: 0.35em;
 }/*# sourceMappingURL=kitchen.css.map */

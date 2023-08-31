@@ -75,13 +75,23 @@ main{
 
   #orders{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    padding-right: 1em;
     padding-top: 0.5em;
-    justify-content: center;
+    align-items: center;
     background-color: $cards-background;
     color: $font-color;
     width: 13em;
     height: 10.27em;
+
+    #orders-title{
+      font-size: 0.8em;
+      padding-bottom: 0.5em;
+    }
+
+    .order-items{
+      font-size: 0.35em;
+
+    }
   }
 }

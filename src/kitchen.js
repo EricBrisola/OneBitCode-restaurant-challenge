@@ -12,10 +12,16 @@ const renderOrders = () =>
   }
   else
   {
-    allOrders.forEach(element => 
-      {
-        
-      })
+    allOrders.forEach((el) => 
+    {
+      const order = document.createElement('li')
+      const delButton = document.createElement('button')
+      order.textContent = 'Table: '+ el.table  + ' | item: ' + el.item + ' | quant: ' + el.quantity
+      order.setAttribute('class', 'order-items')
+      orders.appendChild(order)
+      delButton.setAttribute('textContent', 'delete') 
+      order.appendChild(delButton)
+    })
   }
 }
 
