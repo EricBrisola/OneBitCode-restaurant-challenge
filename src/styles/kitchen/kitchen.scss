@@ -21,6 +21,24 @@
     overflow: none;    
 }
 
+.delBtnStyle{
+  font-size: 12px;
+  text-align: center;
+  background-color: $hover-color;
+  margin-left: 15px;
+  padding: 7px;
+  border-radius: 0.4em;
+  font-weight: bold;
+  color: $font-color;
+  border: none;
+}
+.delBtnStyle:hover{
+    background-color: $hover-color;
+    scale: 1.025;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 // Header style //
 header{
   width: 100%;
