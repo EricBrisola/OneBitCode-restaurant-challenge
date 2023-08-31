@@ -5,8 +5,7 @@ const orderList = []
 // Functions //
 
 
-
-/*=========================// Order Button //==========================*/
+// Order Button //
 // **In event listner the anonymous function pick up all items that the customer wants in your Order - Return H4 and Input Number value
 
 const orderBtn = document.getElementById('order-btn')
@@ -29,6 +28,7 @@ orderBtn.addEventListener('click', function (){
         })
     })
     alert('Order Finished !')
+
     console.log(orderList)
 })
 
