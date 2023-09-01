@@ -34,16 +34,34 @@ const renderOrders = () =>
 function deleteItemBtn (btn)
 {
   const itemToDelete = btn.currentTarget.parentNode
+  
+  let index = itemToDelete.getAttribute('data')
   itemToDelete.remove()
-
-  let index = document.querySelector('data')
   allOrders.splice(index, 1)
   updateOrders()
+  updateIndexes()
 }
 
-function updateOrders() {
+function updateOrders () {
   localStorage.setItem('orders', JSON.stringify(allOrders))
 }
 
+
+function updateIndexes () {
+  let newIndex = 0
+  const allOrdersList = document.querySelectorAll('li')
+  allOrdersList.forEach((element) => 
+  {
+    const eachOrderIndex = element.getAttribute('data')
+    element.removeAttribute('data')
+    element.setAttribute('data', newIndex)
+    //element.setAttribute
+    console.log(eachOrderIndex)
+    newIndex++
+  })
+  console.log(allOrdersList)
+}
+
 renderOrders()
+
 
