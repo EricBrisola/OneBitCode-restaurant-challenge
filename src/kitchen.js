@@ -16,13 +16,13 @@ const renderOrders = () =>
     allOrders.forEach((el) => 
     {
       const order = document.createElement('li')
-      order.textContent = 'Item: ' + el.item + ' | Quantity: ' + el.quantity
+      order.textContent = 'n.º '+ el.table + ' | item: ' + el.item + ' | Quantity: ' + el.quantity
       order.setAttribute('class', 'order-items')
       order.setAttribute('data', i)
       orders.appendChild(order) 
 
       const delButton = document.createElement('button')
-      delButton.textContent = 'Delete'
+      delButton.textContent = 'X'
       delButton.setAttribute('class', 'delBtnStyle')
       delButton.addEventListener('click', deleteItemBtn)
       order.appendChild(delButton)
