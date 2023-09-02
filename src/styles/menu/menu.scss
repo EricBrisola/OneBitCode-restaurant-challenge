@@ -6,6 +6,7 @@
     $secundary-color: #FFC107;
     $font-color: #f9f9f9;
     $default-font:'Lobster', cursive, arial;
+    $secondary-font:'Montserrat', sans-serif;
     $hover-color: #E53935;
     //$hover-color: #65357D;//
     $red-color: #E53935;
@@ -108,9 +109,19 @@ main{
         height: auto;
         text-align: center;
         font-size: 24px;
-        margin-top: 0.9375rem;
+        //margin-top: 0.9375rem;
+        margin: 5px;
         color: $secundary-color;
         border-radius: 0.4em;
+        border: none;
+        outline: none;
+    }
+
+    p{
+        font-size: 14px;
+        color: $font-color;
+        text-align: center;
+        font-family: $secondary-font;
     }
 }
 
