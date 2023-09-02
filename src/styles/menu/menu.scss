@@ -82,6 +82,7 @@ main{
     width: 300px;
     border-radius: 25px;
     background: $cards-background;
+    background: radial-gradient(circle, rgba(255,105,97,1) 0%, rgba(252,70,107,1) 100%);
     //filter: drop-shadow(2px 4px 6px #434343);
     box-shadow: 7px 9px 35px 11px rgba(0, 0, 0, 0.237);
     margin: 15px;

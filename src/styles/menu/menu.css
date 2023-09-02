@@ -61,6 +61,7 @@ main .food-cards {
   width: 300px;
   border-radius: 25px;
   background: #FF6961;
+  background: radial-gradient(circle, rgb(255, 105, 97) 0%, rgb(252, 70, 107) 100%);
   box-shadow: 7px 9px 35px 11px rgba(0, 0, 0, 0.237);
   margin: 15px;
   cursor: pointer;
