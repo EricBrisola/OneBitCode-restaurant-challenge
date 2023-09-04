@@ -7,6 +7,7 @@
     $secundary-color: #FFC107;
     $font-color: #f9f9f9;
     $default-font:'Lobster', cursive, arial;
+    $secondary-font:'Montserrat', sans-serif;
     $hover-color: #E53935;
     $red-color: #E53935;
 
@@ -21,7 +22,6 @@
 
 #container {
     min-height: 100vh;
-    background-color: #E53935;
     display: flex;
     flex-direction: column;
 }
@@ -71,31 +71,61 @@ header{
 }
 
 main{
-    background-color: $bg-color;
-    background: linear-gradient(170deg, rgba(212,255,7,1) 0%, rgba(76,175,80,1) 100%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(90, 90, 90, 0.5)), url('/assets/quadro-de-comida-com-vista-superior-do-copy-space.jpg');
+    background-size:cover;
     display: flex;
     flex: 1;
-    justify-content: space-around;
+    justify-content:flex-start;
     align-items: center;
     overflow: none;
     padding: 1.5rem 0rem;
     height: auto;
-    #home-background{
-        img{
-            height: 526px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 15px;
-        }
-    }
 
     #title-container{
+        margin-left: 5%;
+        display: flex;
+        justify-content:left;
+        flex-direction: column;
+        
         h2{
             font-size: 5rem;
             text-align: center;
             color: $font-color;
-            text-shadow: 4px 0px 11px rgba(255, 193, 7, 1);
+            text-shadow: 4px 0px 11px rgba(255, 193, 7, 0.4);
+        }
+
+        #text-info{
+            color: $font-color;
+            text-shadow: 4px 0px 11px rgba(255, 193, 7, 0.4);
+            margin-top: 0.3em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5em;
+
+            #menu-btn{
+                background-color: $secundary-color;
+                color: $font-color;
+                font-family: $secondary-font;
+                letter-spacing: 2px;
+                font-weight: bold;
+                padding: 0.45em 0.55em;
+                border-radius: 0.5em;
+                border: transparent;
+                cursor: pointer;
+            
+                p{
+                    font-size: 0.65em;
+                    text-shadow: 4px 0px 11px rgba(0, 0, 0, 1);
+
+                }
+            }
+
+            #menu-btn:hover{
+                background-color: $hover-color;
+                scale: 1.05;
+                transition: 0.5s;
+            }
         }
     }
 
@@ -103,12 +133,18 @@ main{
 
 footer{
     justify-self: flex-end;
+
     h1{
         height: auto;
         padding: 0.3em;
         font-size: 0.3em;
+        font-weight: 100;
         text-align: center;
         background-color: $secundary-color;
+        color: $font-color;
+        letter-spacing: 2px;
+        text-shadow: 4px 0px 11px rgba(0, 0, 0, 1);
+
     }
 }
 
