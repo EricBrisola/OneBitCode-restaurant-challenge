@@ -1,7 +1,8 @@
 //-------------------------------------------functions----------------------------------//
-
+console.log('hi')
 const login = () => 
 {
+  console.log('hi')
   //checks if user and password inputs match with the expected values and redirects it to the kitchen page
   const userID = document.querySelector('#admin').value
   const userPassword = document.querySelector('#password').value

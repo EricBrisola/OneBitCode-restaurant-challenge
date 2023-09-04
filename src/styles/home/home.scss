@@ -17,9 +17,14 @@
     font-family: $default-font;
     font-size: 2rem;
     overflow: none;
-
 }
 
+#container {
+    min-height: 100vh;
+    background-color: #E53935;
+    display: flex;
+    flex-direction: column;
+}
 
 // Header style //
 header{
@@ -51,7 +56,7 @@ header{
             font-size: 1rem;
             text-decoration: none;
             color: $font-color;
-            padding-right: 1em;    
+            margin-right: 1em;    
         }
 
         a:hover{
@@ -69,6 +74,7 @@ main{
     background-color: $bg-color;
     background: linear-gradient(170deg, rgba(212,255,7,1) 0%, rgba(76,175,80,1) 100%);
     display: flex;
+    flex: 1;
     justify-content: space-around;
     align-items: center;
     overflow: none;
@@ -96,8 +102,9 @@ main{
 }
 
 footer{
+    justify-self: flex-end;
     h1{
-        height: 5vh;
+        height: auto;
         padding: 0.3em;
         font-size: 0.3em;
         text-align: center;

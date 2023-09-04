@@ -7,32 +7,32 @@
     <link rel="stylesheet" href="styles/login/login.css">
     <link rel="shortcut icon" href="../assets/mexican_skull.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/41dafec09c.js" crossorigin="anonymous"></script>
-    <script src="login.js" defer type="module"></script>
+    <script src="login.js" defer type="text/javascript"></script>
 </head>
 <body>
+  <div id="container">
     <header>
-        <a href="home.html"><span id="header-img-span"><img src="../assets/mexican-flag.png" alt="mexican-flag"></span></a> 
-        <span id="header-nav-span">
-
+      <a href="home.html"><span id="header-img-span"><img src="../assets/mexican-flag.png" alt="mexican-flag"></span></a> 
+      <span id="header-nav-span">
         <nav>
           <a href="home.html">Home</a>
           <a href="menu.html">Menu</a>
-        </span>
-      </nav>
-  </header>
+        </nav>
+      </span>
+    </header>
+    <main>
+      <section id="container">
+          <div id="login-menu">
+              <h3 id="login-title">Login</h3>
+              <i class="fa-regular fa-user" id="user-icon"></i>
+              <input type="text" name="admin" id="admin" class="login-inputs" placeholder="User">
 
-  <main>
-    <section id="container">
-        <div id="login-menu">
-            <h3 id="login-title">Login</h3>
-            <i class="fa-regular fa-user" id="user-icon"></i>
-            <input type="text" name="admin" id="admin" class="login-inputs" placeholder="User">
+              <input type="password" name="password" id="password" class="login-inputs" placeholder="Password">
 
-            <input type="password" name="password" id="password" class="login-inputs" placeholder="Password">
-
-            <button type="button" id="login-btn">Sign in</button>
-        </div>
-    </section>
-  </main>
+              <button type="button" id="login-btn">Sign in</button>
+          </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>

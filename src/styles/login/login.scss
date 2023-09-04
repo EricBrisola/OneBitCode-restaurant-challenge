@@ -19,7 +19,12 @@
     margin: 0px;
     box-sizing: border-box;
     font-size: 2rem;
-    overflow: none;    
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 // Header style //
@@ -53,7 +58,7 @@ header{
           font-size: 1rem;
           text-decoration: none;
           color: $font-color;
-          padding-right: 1em;    
+          margin-right: 1em;    
       }
 
       a:hover{
@@ -70,8 +75,8 @@ header{
 main{
   background-color: $bg-color;
   display: flex;
+  flex: 1;
   justify-content: center;
-  min-height: 92vh;
   font-family: $secondary-font;
 
   #container{
@@ -93,7 +98,7 @@ main{
         ::-webkit-input-placeholder{
             color: $input-placeholder;
             font-weight: 100;
-            opacity: 0.15;
+            opacity: 0.40;
         } 
         
         #login-title{
