@@ -26,19 +26,16 @@ orderBtn.addEventListener('click', function (){
                     let item = input.parentNode.children[1].textContent
                     let quantity = input.parentNode.children[3].value
                     const order = {item: item, quantity: quantity, table: tableNumber}
-                    //console.log(order)
                     if(localStorage.length < 1)
                     {
                         orderList.push(order)
                         localStorage.setItem("orders", JSON.stringify(orderList))
-                        console.log(`local storage vazio, criei agr`)
                     }
                     else
                     {
                         let allOrders = JSON.parse(localStorage.getItem('orders')) || []
                         allOrders.push(order)
                         localStorage.setItem('orders', JSON.stringify(allOrders))
-                        console.log(`local storage ja possui itens, soh adicionei mais`)
                     }
                     
                 }
@@ -46,10 +43,7 @@ orderBtn.addEventListener('click', function (){
         })
         alert('Order Finished !')
         erasingInputFilds()
-    
-        console.log(orderList)
     }
-
 })
 
 
