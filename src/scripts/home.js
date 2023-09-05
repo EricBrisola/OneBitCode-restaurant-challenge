@@ -1,5 +1,5 @@
 const menuBtn = document.querySelector('#menu-btn')
-const menuPage = 'menu.html'
+const menuPage = 'src/menu.html'
 
 const moveToMenu = () => 
 {
